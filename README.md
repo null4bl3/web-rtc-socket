@@ -30,12 +30,12 @@ The current version as of 26/06/2018 works as intended as a fully operational pr
 ### NOTES
 This project builds a docker image also found at:
 
-https://hub.docker.com/r/null4bl3/ibg-rtc/
+https://hub.docker.com/r/null4bl3/web-rtc/
 
 ```
-docker pull null4bl3/ibg-rtc
+docker pull null4bl3/web-rtc
 
-docker run -p 3000:3000 null4bl3/ibg-rtc
+docker run -p 3000:3000 null4bl3/web-rtc
 ```
 
 Hardened networks WILL block the STUN server attempts to hole-punch back into the network leaving the clients unable to connect to each other using the hardened network.
