@@ -1,4 +1,4 @@
-# IBG | RTC
+# WEB | RTC
 ## Proof Of Concept
 
 Room based video conference application based on WebRTC peer-to-peer connections using socket.io.
@@ -18,13 +18,9 @@ These STUN servers are used for hole-punching an accessible route back a client 
 
 A TURN server is used for excessive traversals around NAT settings in network environments where STUN servers are not able to hole-punch successfully through the network, in order to obtain a useful path between clients.
 
-Live demo running for now:
-
-http://ibgrtc.ddns.net/ibg
-
 ## Room Service
 
-The trailing "/ibg" is the room_service logic dividing users into context based channels / rooms.
+The trailing "/path" is the room_service logic dividing users into context based channels / rooms.
 This logic can be used to better session base the client connectivity and allows for a limit to the number of active clients, as well as it allows us to limit and control the room creation and usage logic.
 
 The current version as of 26/06/2018 works as intended as a fully operational proof-of-concept.
