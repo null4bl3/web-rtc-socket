@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WEB | RTC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="IBG | RTC ">
+    <meta name="author" content="null4bl3">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  </head>
+  <body style="height: 100%; font-family: 'Montserrat', sans-serif;">
+    <div class="jumbotron">
+      <h1 class="display-5 text-center">WEB | RTC</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+          <video class="local_video" playsinline autoplay muted></video>
+          <div class="remote_video" style="height: 100%"></div>
+      </div>
+    </div>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="/js/video.js"></script>
+</body>
+</html>
