@@ -38,6 +38,8 @@ docker pull null4bl3/web-rtc
 docker run -p 3000:3000 null4bl3/web-rtc
 ```
 
-Hardened networks WILL block the STUN server attempts to hole-punch back into the network leaving the clients unable to connect to each other using the hardened network.
+Hardened networks, at least with a symmetric NAT setup, WILL block the STUN server attempts to hole-punch back into the network leaving the clients unable to connect to each other using the hardened network.
 
 Client side will warn you that onaddstream is deprecated and you should use ontrack instead. This API change have been noted, but not implemented in this POC, as it is a breaking change and does now supply the same stream type that this example was set up to use. In production, this issue is fairly crucial to fix.
+
+Also, you will need to either use Firefox as a browser, or implement some SSL setup, as Chrome does not support WebRTC connections without https/SSL.
