@@ -4,7 +4,7 @@ let server;
 let port;
 const http = require("http");
 server = http.createServer(app);
-port = 3000;
+port = 3434;
 const io = require("socket.io")(server);
 const room_service = require("./room_service")(io);
 
