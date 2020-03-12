@@ -9,15 +9,15 @@
     "debug": "node --nolazy --inspect --debug-brk=5858 ./server.js"
   },
   "dependencies": {
-    "express": "^4.13.4",
-    "simple-peer": "^9.1.2",
+    "express": "^4.17.1",
+    "simple-peer": "^9.6.2",
     "socket.io": "1.4.*"
   },
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^8.0.10",
-    "@types/socket.io-client": "^1.4.29",
+    "@types/node": "^8.10.59",
+    "@types/socket.io-client": "^1.4.32",
     "@types/webrtc": "0.0.21",
-    "eslint": "^4.2.0"
+    "eslint": "^4.19.1"
   }
 }
