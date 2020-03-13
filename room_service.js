@@ -2,6 +2,7 @@
   @type {SocketIO.Server}
 */
 let _io;
+const log = require('./log.js');
 const MAX_CLIENTS = 2;
 
 /**
@@ -18,6 +19,7 @@ let listen = socket => {
     }
     if (numClients < MAX_CLIENTS) {
       socket.on("ready", () => {
+        log.info(`USER JOINED ROOM: ${room}`);
         socket.broadcast.to(room).emit("ready", socket.id);
       });
       socket.on("offer", (id, message) => {
