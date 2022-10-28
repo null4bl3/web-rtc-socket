@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "simple-peer": "^9.6.2",
-    "socket.io": "1.4.*",
+    "socket.io": "4.5.*",
     "winston": "^3.2.1"
   },
   "license": "ISC",
